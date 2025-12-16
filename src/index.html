@@ -11,13 +11,30 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Bose</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon.png"
+    />
+    <meta
+      name="msapplication-TileColor"
+      content="#ffffff"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="/src/styles/styles.scss"
+      href="./styles/styles.scss"
     />
     <script
       src="/src/scripts/main.js"
@@ -37,7 +54,7 @@
             >
               <img
                 class="top-bar__logo"
-                src="/src/images/logo.svg"
+                src="./images/logo.svg"
                 alt="Bose logo"
               />
             </a>
@@ -339,8 +356,7 @@
             <div class="contacts__content">
               <form
                 class="contacts__form"
-                action="/"
-                method="post"
+                onsubmit="event.preventDefault(); this.reset();"
               >
                 <div class="contacts__form-field">
                   <input
@@ -403,7 +419,8 @@
                   <div class="contacts__title">Address</div>
                   <a
                     class="contacts__contact"
-                    href="#"
+                    href="https://www.google.com/maps/@52.6898437,17.2370567,3z?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
                   >
                     400 first ave.
                     <br />
