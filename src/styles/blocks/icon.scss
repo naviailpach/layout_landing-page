@@ -15,32 +15,34 @@
   &--phone {
     background-image: url(../images/icons/icon-phone.svg);
 
-    &::after {
-      content: '+1 234 5555-55-55';
-      display: block;
-      padding-right: 8px;
+    @include onDesctop {
+      &::after {
+        content: '+1 234 5555-55-55';
+        display: block;
+        padding-right: 8px;
 
-      position: absolute;
-      top: 50%;
-      right: 100%;
+        position: absolute;
+        top: 50%;
+        right: 100%;
 
-      font-family: inherit;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: $main-text-color;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $main-text-color;
 
-      white-space: nowrap;
-      opacity: 0;
+        white-space: nowrap;
+        opacity: 0;
 
-      transform: translateY(-50%);
-      transition: opacity $effectDuration ease;
-    }
+        transform: translateY(-50%);
+        transition: opacity $effectDuration ease;
+      }
 
-    &:hover::after {
-      opacity: 1;
+      &:hover::after {
+        opacity: 1;
+      }
     }
   }
 
