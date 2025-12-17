@@ -21,11 +21,17 @@
     height: 100%;
     object-fit: cover;
 
+    border-radius: 4px;
+
     transition: transform $effectDuration linear;
 
     &:hover {
       transform: translateY(-20px);
       cursor: pointer;
+    }
+
+    @include onTablet {
+      border-radius: 0;
     }
   }
 
